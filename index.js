@@ -98,5 +98,4 @@ app.get('/download/:filename', async (req, res) => {
     res.status(500).json({ message: `File download failed: ${err.message}` });
   }
 });
-
-app.listen(PORT, () => console.log(`Server running at http://localhost:${PORT}`));
+module.exports = app;
